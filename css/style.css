@@ -1,0 +1,316 @@
+
+/*Main styles */
+
+* { 
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background:black;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+h1 {
+  font-size: 2rem;
+  font-color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  font-color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  font-color: white;
+}
+
+
+img {
+  width: 100%;
+  max-width: 600px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+header {
+  display: inline;
+  margin-bottom: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  line-height: 1.5;
+  margin: 0;
+
+}
+
+section {
+  height: 100vh;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* Link Styles */
+  
+a {
+  color:black;
+  text-decoration: none;
+}
+a:hover {
+  color:black;
+
+}
+
+/* Add a white background color on mouse-over */
+
+.card {
+  margin: 30px auto; 
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 10px solid grey;
+  border-radius: 6px;
+}
+.card:hover {
+  border-color: red;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+  
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #white;
+}
+
+#container {
+  display: block;
+  margin-left:auto;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  color:white;
+}
+
+footer .copyright {
+  color: white;
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+
+.box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box p {
+    margin: 2rem;
+}
+
+.box button {
+    background-color: rebeccapurple;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    transition: transform 0.1s linear;
+}
+
+.box button:active {
+    transform: scale(0.97);
+}
+
+.box button:focus {
+    outline: none;
+}
+
+
+/* Unordered List */
+
+ul#main-nav {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+ul#main-nav li {
+  width: 100%;
+}
+
+ul#main-nav a:link {
+  width: 100%;
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+  display: block;
+}
+
+ul#main-nav a:hover {
+  background: grey;
+}
+
+  /* Styles for tablet */
+  @media screen and (min-width: 720px) {
+      
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: inline;
+      margin-bottom: 1px;
+      text-align: center;
+      display: flex-grow;
+      flex-direction: row;
+      padding-top: 2px;
+      line-height: 1.5px;
+      margin: 0;
+    }
+
+ body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      text-align: center;
+    }   
+    nav.header-nav--container {
+      width: 100%;
+    }
+
+    .header--logo {
+      width: 25%;
+      max-width: 300px;
+      padding: 20px;
+    }
+
+    ul#main-nav {
+      flex-direction: row;
+      flex: 7em;
+      flex-wrap: nowrap;
+    }
+    
+    ul#main-nav li {
+
+    }
+    
+    ul#main-nav a:link {
+
+      background: white;
+    }
+
+
+/* Styles for Large Screens */
+@media screen and (min-width: 1000px) {
+  .flex {
+    display: row;
+    max-width: 1005px;
+    justify-content: center;
+    margin: 5px;
+}
+
+body {
+  align-content: normal;
+}
+
+
+header {
+  min-height: 450px;
+}
+
+main {
+  flex-direction: row;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+main p {
+  line-height: 1.6em;
+}
+
+footer {
+  font-size: 1.3em;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+
+h3{
+  color:black;
+  letter-spacing:.5px;
+}
+
+.card-title {
+  text-align:center;
+  border: solid black 3px;
+  border-radius: 5px;
+  margin-top: 10px;
+  
+}
+
+}
