@@ -8,25 +8,65 @@
 <!--Links to css,fonts, all kind of styles ---->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
-<header>
-
-    <img src="img\logo.png" alt="Jamie McMahan logo" class="profile-img">
-    <nav class="header-nav--container">
-        <ul class="header-nav--list" id="main-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="About me.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-
 
 <style>
+    .dropbtn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .dropdown {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: sta;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: pink;
+    }
+    
+    body {
+        background-image: url('img/background3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    
     div.container {
-        background-color: white;
+        background-color: ;
     }
     
     div.container p {
@@ -38,21 +78,7 @@
         text-decoration: none;
         text-transform: uppercase;
         color: black;
-        background-color: white;
-    }
-</style>
-
-<div class="container">
-    <p>Canva Projects</p>
-</div>
-
-<style>
-    .cards2 {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        flex-direction: column;
-        max-height: 100vh;
+        background-color: ;
     }
     
     .cards2 img {
@@ -63,17 +89,44 @@
         box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
         max-width: 23vw;
     }
+    
+    .cards2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        max-height: 100vh;
+    }
 </style>
-<main class="cards2">
-    <img src="img\business card.png" alt="business card">
-    <img src="img\Delilah's bday.jpg" alt="business card">
-    <img src="img\logo.jpg" alt="McMahan mowing logo">
-    <img src="img\Delilah.jpg" alt="Delilah">
-    <img src="img\services.jpg" alt="Delilah's birthday">
-    <img src="img\hbd.jpg" alt="Happy Birthday sign">
-</main>
+<header>
+    <div class="dropdown">
+        <button class="dropbtn"><img src="img\logo.png" alt="Jamie McMahan logo" class="profile-img"></button>
+        <div class="dropdown-content">
+            <a href="Resume.pdf">Resume</a>
+            <a href="portfolio.html">Visual Portfolio</a>
+            <a href="About me.html">About me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
 
 
-</body>
+    <body>
+        <div class="container ">
+            <p>Canva Projects</p>
+        </div>
+        <main class="cards2 ">
+            <img src="img\business card.png " alt="business card ">
+            <img src="img\Delilah 's bday.jpg " alt="business card ">
+            <img src="img\logo.jpg " alt="McMahan mowing logo ">
+            <img src="img\Delilah.jpg " alt="Delilah ">
+            <img src="img\services.jpg " alt="Delilah 's birthday ">
+            <img src="img\hbd.jpg " alt="Happy Birthday sign ">
+        </main>
+
+
+    </body>
+    <footer>
+
+    </footer>
 
 </html>

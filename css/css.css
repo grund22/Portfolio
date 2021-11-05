@@ -421,7 +421,8 @@ a {
 .w3-ul {
     list-style-type: none;
     padding: 0;
-    margin: 0
+    margin: 0;
+    font-size: 15px;
 }
 
 .w3-ul li {
@@ -1510,7 +1511,7 @@ a {
 .w3-blue-gray,
 .w3-hover-blue-gray:hover {
     color: #fff!important;
-    background-color: rgba(197, 5, 85, 0.514)!important
+    background-color: #ef476f!important
 }
 
 .w3-green,
@@ -1528,7 +1529,7 @@ a {
 .w3-indigo,
 .w3-hover-indigo:hover {
     color: #fff!important;
-    background-color: #3f51b5!important
+    background-color: #85718d!important
 }
 
 .w3-khaki,
@@ -1576,7 +1577,7 @@ a {
 .w3-red,
 .w3-hover-red:hover {
     color: #fff!important;
-    background-color: #f44336!important
+    background-color: #ffc43d!important
 }
 
 .w3-sand,
@@ -1606,7 +1607,7 @@ a {
 .w3-black,
 .w3-hover-black:hover {
     color: #fff!important;
-    background-color: #000!important
+    background-color: #0c637f!important
 }
 
 .w3-grey,
@@ -1630,7 +1631,7 @@ a {
 .w3-dark-gray,
 .w3-hover-dark-gray:hover {
     color: #fff!important;
-    background-color: #616161!important
+    background-color: #f78656!important
 }
 
 .w3-pale-red,
